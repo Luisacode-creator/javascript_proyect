@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARIBE DREAMS</title> 
+    <meta name="description" content="Página web dedicada a la venta de paquetes de viaje a República Dominicana">
+    <meta name="author" content="Luisa María del Villar">
+    <meta name="locality" content="europa, españa, madrid">
+    <meta name="keywords" content="latinoamerica, viaje, viajes, caribe, republicadominicana, paraiso, playa, playas, excursiones">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylePresupuesto.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico"> 
+
+    
+</head>
+<body>
+    <nav class="nav-arriba"> 
+        <div class="logo">
+            <p class="parrafo-nav">Caribe Dreams</p>
+        </div>
+        <ul class="links">
+            <li><a href="../index.html" target="_blank">Inicio</a></li>
+            <li><a href="./galeria.html" >Explorar</a></li>
+            <li><a href="#" class="in" >Presupuesto</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="principal-main">
+        <div class="datosdecontacto" id="datosdecontacto">
+            <form name="miformulario" id="miformulario" class="miformulario">
+                 <h2>DATOS DE CONTACTO</h2>
+                 <div class="parejas">
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" required>
+                </div>
+                <div class="parejas">
+                  <label for="apellido">Apellido:</label>
+                  <input type="text" id="apellido" required>
+                </div>
+                <div class="parejas">
+                  <label for="telefono">Teléfono de contacto:</label>
+                  <input type="text" id="telefono" required >
+                </div>
+                <div class="parejas">
+                  <label for="correo">Correo Electrónico:</label>
+                  <input type="text" id="correo" required>
+                </div>
+            </form>
+        </div>
+        <div class="presupuesto" id="presupuesto">   
+            <!--ELEGIR UN PAQUETE-->
+             <div class="opciones"> 
+                <h2>PRESUPUESTO</h2>
+               <div class="div paquetes">
+                 <label for="producto">Paquetes:</label>
+                 <select name="Producto" id="producto"> 
+                    <option value="paquete-500">Paquete 1: 500€</option>
+                    <option value="paquete-600">Paquete 2: 600€</option>
+                    <option value="producto-700">Paquete 3: 700€</option>
+                    <option value="producto-800">Paquete 4: 800€</option>
+                 </select>
+               </div>
+              <!--ELEGIR UN PLAZO-->
+              <div class="div plazos">
+                <label for="plazo">Plazo:</label>
+                <input type="number" id="plazo" value="0" min="0" required>
+              </div>
+              <!--ELEGIR EXTRAS-->
+              <div class="div extras">
+                <input type="checkbox" id="transporte" class="extras">
+                <label for="transporte">Transporte</label>
+
+                <input type="checkbox" id="equipaje10" class="extras" >
+                <label for="equipaje10">Equipaje 10kg</label>
+
+                <input type="checkbox" id="equipaje20" class="extras">
+                <label for="equipaje20">Equipaje 20kg </label>
+
+                <input type="checkbox" id="premium" class="extras">
+                <label for="premium">Hotel Premium</label>
+             </div>
+             <div class="div calculo">
+                <label for="calculo">Total: </label>
+                <input type="text" id="calculo" class="calculo">
+             </div>
+             <div class="div condiciones">
+                <div>
+                   <input type="checkbox" id="condiciones" required> 
+                   <label for="condiciones">Acepto los terminos y condiciones</label>
+                </div>
+               <button id="enviar" class="enviar">ENVIAR</button>
+             </div>
+        </div>
+        </div>
+         
+    </main>
+    <div class="paquetes-descripcion"> 
+        <div class="descripcion">
+            <h2>Básico Tropical (500€) </h2>
+            <p>Escapada esencial a Santo Domingo. Incluye vuelo y hotel económico cerca del malecón. Perfecto para pasar unas semanas</p>
+            <img src="../assets/images/galeria/foto1.avif" alt="imagen playa" width="800" height="800">
+        </div>
+        <div class="descripcion">
+            <h2>Aventura Estándar (600€)</h2>
+            <p>Relájate en Puerto Plata con desayunos incluidos y acceso rápido a playas doradas. Ideal para quienes buscan sol!</p>
+            <img src="../assets/images/galeria/foto2.avif" alt="imagen playa" width="800" height="800">
+        </div>
+        <div class="descripcion">
+            <h2>Confort Playero (700€)</h2>
+            <p>Disfruta de hoteles 4 estrellas en Punta Cana con media pensión. Equilibrio perfecto entre descanso y cócteles</p>
+            <img src="../assets/images/galeria/foto3.avif" alt="imagen playa" width="800" height="800">
+        </div>
+        <div class="descripcion">
+            <h2>Todo Incluido Premium (800€)</h2>
+            <p>Experiencia total en un resort de lujo. Comidas, bebidas y actividades ilimitadas frente al mar para no preocuparte por nada</p>
+            <img src="../assets/images/galeria/foto4.avif" alt="imagen playa" width="800" height="800">
+        </div>
+    </div>
+
+    <footer class="principal-footer"> 
+        <img class="copyright" src="../assets/images/footer/copyright.svg" alt="imagen del logo de  copyright" width="800" height="800">
+        <p>2026. Todos los derechos reservados | Aviso legal</p>
+        <a href="https://www.instagram.com/"><img src="../assets/images/footer/instagram.svg" alt="imagen del logo de instagram" width="800" height="800"></a>
+        <a href="https://www.tiktok.com/"><img src="../assets/images/footer/tiktok.svg" alt="imagen del logo de tiktok" width="800" height="800"></a>
+        <a href="https://www.whatsapp.com/"><img src="../assets/images/footer/whatsapp.svg" alt="imagen del logo de whatsapp" width="800" height="800"></a>
+        <p>Dirección: C/ No existe, n4. España, Madrid</p>
+    
+
+    </footer>
+    <script src="../scripts/scriptPresupuesto.js"></script>
+</body>
+</html>
+
+
+
+

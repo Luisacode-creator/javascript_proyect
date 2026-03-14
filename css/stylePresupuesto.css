@@ -1,0 +1,231 @@
+.principal-main {
+    display:flex;  
+    justify-content:space-between; 
+    width:100%; 
+    height: 100vh;
+    background-image: url(../assets/images/main1/fondoheader.webp);
+}
+.datosdecontacto,.presupuesto{ 
+    width:40%; 
+    display:flex;
+    flex-direction:column; 
+    justify-content:center; 
+    align-items:center; 
+    height:auto; 
+    margin-right: 100px;
+    
+}
+.datosdecontacto{ 
+    margin-left:100px; 
+}
+h2{ 
+    color:white; 
+    font-family:'Times New Roman', Times, serif; 
+    font-size:30px;
+    text-decoration:underline; 
+
+}
+
+.miformulario,.opciones{ 
+    display:flex; 
+    flex-direction:column; 
+    justify-content:space-around; 
+    width:100%;
+    height:400px; 
+    background-color: #7fe3e8;
+    border-radius:30px; 
+    padding:20px; 
+    margin:50px; 
+    box-shadow:  0px 5px 30px rgba(0, 0, 0, 0.8);
+}
+/*----------Input's del formulario--------------*/
+form input{ 
+    padding:10px; 
+    height:30px; 
+    border-radius:5px;  
+
+}
+label { 
+    font-family:'Times New Roman', Times, serif; 
+    font-size:20px; 
+}
+.extras label{  
+    font-size:18px; 
+}
+
+
+/*--------------------PRESUPUESTO-------------------*/
+.div{ 
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    width:100%; 
+    border-radius:20px; 
+    height:60px; 
+    padding:2px; 
+    background-color:rgba(113, 209, 214, 0.9);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5); 
+    margin-bottom:10px; 
+
+}
+
+.plazos input, #calculo, #producto{ 
+    border-radius: 30px;
+    width:100px; 
+    height:30px; 
+    text-align:center; 
+    margin-left:2px; 
+}
+#producto{ 
+    width:auto; 
+    padding:5px; 
+}
+label[for="producto"]:hover{ 
+    cursor:pointer; 
+}
+
+.extras input { 
+    margin-left:8px;
+    margin-right:3px;  
+
+}
+.condiciones { 
+    display:flex; 
+    flex-direction: column;
+}
+.condiciones label{ 
+    font-size:15px; 
+}
+
+.enviar { 
+    width:100px; 
+    height:50px; 
+    border-radius:50%; 
+    background-color:#64abaf; 
+    border:2px solid white ;
+    margin:5px 0;
+    font-weight:bold;   
+}
+.enviar:hover{ 
+    background-color: #7fe3e8;
+    cursor:pointer; 
+    color:white; 
+}
+
+/*-------------------DESCRIPCIÓN DE LOS PAQUETES-----------------*/
+.paquetes-descripcion{ 
+    display:flex;
+    background-image: url(../assets/images/main1/fondoheader.webp);  
+    background-position:top; 
+    justify-content: space-between;
+}
+.descripcion{ 
+    width:400px; 
+    height:300px; 
+    background-color: rgba(127, 227, 232,0.7);
+    border-radius:30px; 
+    margin:5px; 
+    padding:10px; 
+    text-align:center; 
+}
+.descripcion h2, .descripcion p{ 
+    font-size:20px; 
+    margin-bottom: 5px;
+    color:white; 
+    font-family:'Times New Roman', Times, serif; 
+    font-weight:bold; 
+}
+.descripcion p{ 
+    color:black; 
+}
+.descripcion img{ 
+    width:100%; 
+    height:50%;  
+    border-radius:30px; 
+    box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.8);
+    opacity:0.6; 
+}
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_* _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*MEDIAS_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+
+
+
+
+/*--------------------------------TABLETS-----------------------------*/
+
+@media (max-width:1024px){
+    .principal-main{
+        flex-direction:column; 
+        height:auto; 
+    }
+
+    .datosdecontacto, .presupuesto{
+        width:90%;
+        margin:auto auto; 
+    }
+
+    .paquetes-descripcion{
+        flex-wrap:wrap; 
+        justify-content:center;
+    }
+
+    .descripcion{
+        width:40%;
+        margin:15px;
+    }
+}
+
+/*-----------------------------MÓVILES---------------------------------*/
+
+
+@media (max-width:768px){
+    /* -----------cajas--------------*/
+    .miformulario, .opciones{
+        height:auto; 
+        margin:20px;
+    }
+
+    /*------------inputs------------*/
+    form input{
+        width:90%; 
+        height:40px;
+    }
+
+    /*------------presupuesto----------*/
+    .div{
+        flex-direction:column; 
+        height:auto;
+        margin-top:10px; 
+        padding:15px;
+    }
+
+    .plazos input, #calculo, #producto{
+        width:50%; 
+    }
+
+    /*---extras---*/
+    .extras label{
+        font-size:20px;
+    }
+    .condiciones{ 
+        height:100px; 
+    }
+
+    /*---paquetes---*/
+    .paquetes-descripcion{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .descripcion{
+        width:80%; 
+        height:auto;
+        margin-bottom:10px;
+    }
+
+    .descripcion img{
+        height: 200px;
+    }
+}

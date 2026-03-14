@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARIBE DREAMS</title> 
+    <meta name="description" content="Página web dedicada a la venta de paquetes de viaje a República Dominicana">
+    <meta name="author" content="Luisa María del Villar">
+    <meta name="locality" content="europa, españa, madrid">
+    <meta name="keywords" content="latinoamerica, viaje, viajes, caribe, republicadominicana, paraiso, playa, playas, excursiones">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleGaleria.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-arriba"> 
+        <div class="logo">
+            <p class="parrafo-nav">Caribe Dreams</p>
+        </div>
+        <ul class="links">
+            <li><a href="../index.html" target="_blank">Inicio</a></li>
+            <li><a href="#" class="in">Explorar</a></li>
+            <li><a href="./presupuesto.html">Presupuesto</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <header class="pagina-principal headerGaleria" id="pagina-principal"> 
+        <h1 class="h1-header">EXPLORA LA <br>República Dominicana </h1>
+        <input type="button" value="PIDE TU PRESUPUESTO" id="miboton-header">
+        <div id="botones">
+            <input type="button" id="playas" value="playas" class="boton">
+            <input type="button" id="hoteles" value="hoteles" class="boton">
+            <input type="button" id="cultura" value="cultura" class="boton">
+        </div>
+    </header>
+
+    <main class="principal-main">
+        <div class="carrusel-playa-container">
+            <div id="anterior" class="fa-solid fa-circle-arrow-left"></div>
+            <div id="carrusel-playa" class="carrusel-playa">
+                <div class="caja hidden"></div>
+                <div class="caja visible"></div>
+                <div class="caja hidden"></div>
+            </div>
+            <div id="posterior" class="fa-solid fa-circle-arrow-right"></div>
+        </div>
+        <div class="carrusel-hoteles-container">
+            <div id="anterior2" class="fa-solid fa-circle-arrow-left"></div>
+            <div id="carrusel-hoteles" class="carrusel-hoteles">
+                <div class="caja2 hidden"></div>
+                <div class="caja2 visible"></div>
+                <div class="caja2 hidden"></div>
+            </div>
+            <div id="posterior2" class="fa-solid fa-circle-arrow-right"></div>
+        </div>
+        <div class="carrusel-cultura-container">
+            <div id="anterior3" class="fa-solid fa-circle-arrow-left"></div>
+            <div id="carrusel-cultura" class="carrusel-hoteles">
+                <div class="caja3 hidden"></div>
+                <div class="caja3 visible"></div>
+                <div class="caja3 hidden"></div>
+            </div>
+            <div id="posterior3" class="fa-solid fa-circle-arrow-right"></div>
+        </div>
+    </main>
+
+    <footer class="principal-footer"> 
+        <img class="copyright" src="../assets/images/footer/copyright.svg" alt="imagen del logo de  copyright" width="800" height="800">
+        <p>2026. Todos los derechos reservados | Aviso legal</p>
+        <a href="https://www.instagram.com/"><img src="../assets/images/footer/instagram.svg" alt="imagen del logo de instagram" width="800" height="800"></a>
+        <a href="https://www.tiktok.com/"><img src="../assets/images/footer/tiktok.svg" alt="imagen del logo de tiktok" width="800" height="800"></a>
+        <a href="https://www.whatsapp.com/"><img src="../assets/images/footer/whatsapp.svg" alt="imagen del logo de whatsapp" width="800" height="800"></a>
+        <p>Dirección: C/ No existe, n4. España, Madrid</p>
+    
+
+    </footer>
+  <script type="module" src="../scripts/scriptGaleria.js"></script>
+</body>
+</html>
