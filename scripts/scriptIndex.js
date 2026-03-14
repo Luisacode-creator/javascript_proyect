@@ -4,7 +4,7 @@
 export function presupuesto(){ 
     const bntPresupuesto = document.getElementById('miboton-header')
     bntPresupuesto.addEventListener('click', ()=>{
-       window.location.href = "../viws/presupuesto.html"
+       window.location.href = "viws/presupuesto.html"
     })
 }
 presupuesto()
